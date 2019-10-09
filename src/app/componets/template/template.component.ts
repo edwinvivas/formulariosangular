@@ -13,13 +13,25 @@ export class TemplateComponent   {
 usuario:object = {
 nombre:"",
 apellido: "",
-correo:""
+correo:"",
+pais:""
 
 }
+paises= [{
+codigo:"COL",
+nombre: "Colombia"
+},
+
+{
+  codigo:"ESP",
+  nombre: "España"
+}
+]
+
 
   constructor() { }
 
-  
+
 guardar(forma:NgForm)
   {
     console.log("Formulario posteado");
