@@ -59,17 +59,32 @@
     <div class="form-group row">
       <label class="col-2 col-form-label">Pais</label>
       <div class="col-8">
-<select [(ngModel)]="usuario.pais"
-class="form-control"
-name="pais" >
-<option value="">Seleccione un pais</option>
-<option *ngFor="let pais of paises"
-[value]="pais.codigo">{{ pais.nombre }}</option>
-
-
-</select>
+        <select [(ngModel)]="usuario.pais" class="form-control" name="pais">
+          <option value="">Seleccione un pais</option>
+          <option *ngFor="let pais of paises" [value]="pais.codigo">{{ pais.nombre }}</option>
+        </select>
       </div>
     </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Apellido</label>
+        <div class="col-8">
+
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">Toggle this custom radio</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline2">Or toggle this other custom radio</label>
+              </div>
+
+
+
+        </div>
+      </div>
+
+
 
   </div>
   <div class="form-group row">

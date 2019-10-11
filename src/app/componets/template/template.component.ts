@@ -14,8 +14,8 @@ usuario:object = {
 nombre:"",
 apellido: "",
 correo:"",
-pais:""
-
+pais:"",
+genero:"hombre"
 }
 paises= [{
 codigo:"COL",
