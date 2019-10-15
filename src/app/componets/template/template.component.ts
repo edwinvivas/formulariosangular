@@ -15,7 +15,8 @@ nombre:"",
 apellido: "",
 correo:"",
 pais:"",
-genero:"hombre"
+sexo:"hombre",
+acepta: false
 }
 paises= [{
 codigo:"COL",
@@ -27,6 +28,7 @@ nombre: "Colombia"
   nombre: "España"
 }
 ]
+sexos:string [] = ["Hombre","Mujer"]
 
 
   constructor() { }
